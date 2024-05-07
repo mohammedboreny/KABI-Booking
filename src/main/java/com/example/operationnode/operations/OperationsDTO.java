@@ -5,6 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface OperationsDTO {
-    Double getIntervalSum(DateInterval date);
-    boolean postIntervalSum(DateInterval date);
+    Double calculatePrices(DateInterval date);
+    boolean postIntervalPrices(DateInterval date);
 }

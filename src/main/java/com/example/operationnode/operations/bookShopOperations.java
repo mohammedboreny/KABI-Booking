@@ -14,7 +14,7 @@ public class bookShopOperations implements OperationsDTO {
     HashMap<LocalDate,Double> dateHashMap = new HashMap<>();
 
     @Override
-    public Double getIntervalSum(DateInterval intervalWithPrice) {
+    public Double calculatePrices(DateInterval intervalWithPrice) {
         LocalDate currentDate = intervalWithPrice.getStartDate();
         double startDateValue = dateHashMap.get(currentDate);
         double sum=0;
@@ -26,7 +26,7 @@ public class bookShopOperations implements OperationsDTO {
     }
 
     @Override
-    public boolean postIntervalSum(DateInterval date) {
+    public boolean postIntervalPrices(DateInterval date) {
         if (date==null)
             return false;
         LocalDate currentDate = date.getStartDate();

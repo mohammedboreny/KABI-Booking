@@ -12,6 +12,7 @@ public class DateInterval {
     LocalDate startDate;
     LocalDate  endDate;
     Double Price;
+    private static final double DEFAULT_PRICE = 0.0;
 
     public LocalDate getStartDate() {
         return startDate;
@@ -30,9 +31,8 @@ public class DateInterval {
     }
 
     public Double getPrice() {
-        return Price;
+        return Price != null ? Price : DEFAULT_PRICE;
     }
-
     public void setPrice(Double price) {
         Price = price;
     }
