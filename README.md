@@ -57,3 +57,5 @@ price, and They can overlap their prices.
 ### How to run this application:
 - You should have Java 17 or higher installed in your machine.
 - After installation of java JDK, from the root head to ./src/target directory , then run the command line tool (ensure that the cmd is watching the target directory), Then run the command **java -jar operation-node-0.0.1-SNAPSHOT.jar** , and the server will start.
+
+![alt](./Screenshot%202024-05-08%20080426.png)
